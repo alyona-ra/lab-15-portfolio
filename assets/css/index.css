@@ -1,0 +1,48 @@
+#canvas {
+  position: fixed;
+  bottom: 0;
+  margin: 10px 0 0 0;
+  width: 100vw;
+  height: 120px;
+}
+
+main {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main-wrapper {
+  width: auto;
+  margin-left: 130px;
+}
+
+main .main-wrapper p {
+  font-size: 1.3rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+main .main-wrapper p.name {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+main .main-wrapper p.right {
+  text-align: end;
+}
+
+main img {
+  height: 350px;
+  width: auto;
+  position: relative;
+  left: -90px;
+  top: 5px;
+}

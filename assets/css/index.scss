@@ -1,0 +1,46 @@
+@import 'variables.scss';
+
+#canvas {
+    position: fixed;
+    bottom: 0;
+    margin: 10px 0 0 0;
+    width: 100vw;
+    height: 120px;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main-wrapper {
+        width: auto;
+        // border: 1px solid hotpink;
+        margin-left: 130px;
+        p {
+            font-size: 1.3rem;
+            font-weight: 100;
+            text-transform: uppercase;
+    
+            &.name {
+                font-size: 5rem;
+                font-weight: 300;
+                // text-transform: uppercase;
+            }
+    
+            &.right {
+                text-align: end;
+                // font-size: 0.9rem;
+            }
+        }
+    }
+    img {
+        height: 350px;
+        width: auto;
+        position: relative;
+        left: -90px;
+        top: 5px;
+
+    }
+}

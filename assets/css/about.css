@@ -1,0 +1,64 @@
+h1 {
+  color: #ADE2F7;
+}
+
+h1:nth-of-type(2) {
+  margin-top: 70px;
+}
+
+p {
+  margin: 10px 250px 10px 50px;
+  font-weight: 100;
+  font-size: 1.15rem;
+  line-height: 1.7rem;
+}
+
+.wrapper {
+  margin: 0 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-column-gap: 150px;
+          column-gap: 150px;
+}
+
+.wrapper .skill-wrapper h3 {
+  font-weight: 100;
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+}
+
+.wrapper .skill-wrapper progress[value] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 300px;
+  height: 2px;
+  margin: 2px 0 20px 0;
+}
+
+.wrapper .skill-wrapper progress[value]::-webkit-progress-bar {
+  background-color: #2F6175;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.wrapper .skill-wrapper progress[value]::-webkit-progress-value {
+  background-color: #ADE2F7;
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+img {
+  height: 500px;
+  width: auto;
+  position: fixed;
+  right: 15px;
+  bottom: 0;
+}

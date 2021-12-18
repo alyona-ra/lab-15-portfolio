@@ -1,0 +1,99 @@
+body main {
+  padding: 0;
+}
+
+.main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+}
+
+.main-wrapper h1 {
+  color: #ADE2F7;
+}
+
+.main-wrapper .icons-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 0 0 50px;
+  gap: 10px;
+  display: flex;
+}
+
+.main-wrapper .icons-contact svg {
+  width: 30px;
+  height: auto;
+  fill: #595959;
+  margin: 0px 20px 0 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.main-wrapper .icons-contact svg:hover {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  fill: white;
+  -webkit-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+  cursor: pointer;
+}
+
+.main-wrapper .inputs-area {
+  margin: 50px 0 30px 50px;
+}
+
+.main-wrapper .inputs-area .input-wrapper {
+  margin: 25px 0;
+}
+
+.main-wrapper .inputs-area .input-wrapper p {
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.main-wrapper .inputs-area .input-wrapper input {
+  margin-top: 5px;
+  height: 30px;
+  width: 450px;
+  background-color: transparent;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 1px solid #ADE2F7;
+  outline: none;
+  color: white;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.main-wrapper .inputs-area .input-wrapper textarea {
+  border: 1px solid #ADE2F7;
+  border-radius: 2px;
+  height: 300px;
+  width: 800px;
+  resize: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  font-weight: 300;
+  font-size: 1.1rem;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.main-wrapper .inputs-area .input-wrapper button {
+  margin: 5px 0 0 0;
+  width: 170px;
+  background-color: #ADE2F7;
+  color: #1a1a1a;
+  font-weight: 300;
+}
+
+.main-wrapper .inputs-area .input-wrapper button:hover {
+  background: #61CAF5;
+}

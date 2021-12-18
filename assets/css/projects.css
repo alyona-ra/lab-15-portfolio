@@ -1,0 +1,100 @@
+main h1 {
+  color: #ADE2F7;
+}
+
+main aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: -10px 0 30px 50px;
+}
+
+main aside p {
+  margin-right: 15px;
+  font-weight: 300;
+}
+
+main aside p:not(:first-child) {
+  cursor: pointer;
+}
+
+main aside p:not(:first-child):hover {
+  color: #ADE2F7;
+}
+
+main aside .active {
+  color: #61CAF5;
+}
+
+main .project-wrapper {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0 70px 50px;
+  border: none;
+}
+
+main .project-wrapper .text-wrapper h4 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+main .project-wrapper .text-wrapper .project-media {
+  font-weight: 100;
+  font-size: 1rem;
+  margin-top: 3px;
+}
+
+main .project-wrapper .text-wrapper .project-year {
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+
+main .project-wrapper .text-wrapper .project-description {
+  font-weight: 100;
+  font-size: 1.15rem;
+  line-height: 1.6rem;
+  margin: 15px 0;
+}
+
+main .project-wrapper .text-wrapper button {
+  margin: 10px 0 0 0;
+  color: #ADE2F7;
+  background-color: transparent;
+  border: 1px solid #ADE2F7;
+}
+
+main .project-wrapper .text-wrapper button:hover {
+  color: #1a1a1a;
+  background-color: #ADE2F7;
+  cursor: pointer;
+}
+
+main .project-wrapper .text-wrapper .code-link {
+  color: #ADE2F7;
+  text-decoration: none;
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+main .project-wrapper .text-wrapper .code-link:hover {
+  color: #61CAF5;
+}
+
+main .project-wrapper img {
+  width: 35%;
+  height: 100%;
+  margin-left: 40px;
+  border-radius: 2px;
+}
+
+main .hidden {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  display: none;
+}

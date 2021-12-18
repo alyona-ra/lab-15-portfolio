@@ -1,0 +1,28 @@
+@import 'variables.scss';
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 60px;
+    padding: 30px 10px 0px 0;
+
+    a {
+        color: lighten($dark-grey, 35%);
+        margin-right: 20px;
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        &:hover {
+            color: darken($light-blue, 5%);
+        }
+
+        &.current-page {
+            color: $light-blue;
+            font-weight: 400;
+        }
+
+    }
+}
