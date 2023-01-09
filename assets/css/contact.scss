@@ -2,113 +2,57 @@
 
 body main {
     padding: 0;
+    height: 100vh;
 }
 
 .main-wrapper {
     display: flex;
-    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .content {
+        margin-top: -100px;
+    }
     
     h1 {
         color: $light-blue;
+        margin: 0;
     }
 
     .icons-contact {
         display: flex;
+        justify-content: center;
         flex-direction: row;
-        margin: 0 0 0 50px;
-        gap: 10px;
-        display: flex;
+        margin: 20px 0;
+        gap: 50px;
                 
         svg {
-            width: 30px;
+            width: 50px;
             height: auto;
-            fill: darken(white, 65%);
-            margin: 0px 20px 0 0;
+            fill: darken(white, 75%);
+            transition-property: transform, fill;
             transition: 0.2s ease-in-out;
 
             &:hover {
-                transition: 0.2s ease-in-out;
-                fill: white;
-                transform: translate(0, -10px);
+                transform: translate(0, -5px);
                 cursor: pointer;
-            }
-        }
-    }
-
-    .inputs-area {
-        margin: 50px 0 30px 50px;
-        .input-wrapper {
-            margin: 25px 0;
-
-            p {
-                font-weight: 100;
-                font-size: 1.2rem;
-            }
-
-            input {
-                margin-top: 5px;
-                height: 30px;
-                width: 450px;
-                background-color: transparent;
-                border: none;
-                border-radius: 2px;
-                border-bottom: 1px solid $light-blue;
-                outline: none;
-                color: white;
-                font-weight: 300;
-                font-size: 1.1rem;
-            }
-
-            textarea {
-                border: 1px solid $light-blue;
-                border-radius: 2px;
-                height: 300px;
-                width: 800px;
-                resize: none;
-                outline: none;
-                background-color: transparent;
-                color: white;
-                font-weight: 300;
-                font-size: 1.1rem;
-                padding: 10px;
-                margin-top: 15px;
-            }
-
-            button {
-                margin: 5px 0 0 0;
-                width: 170px;
-                background-color: $light-blue;
-                color: $dark-grey;
-                font-weight: 300;
-
-                &:hover {
-                    background: $mid-blue;
-
+                path {
+                    fill: white;
                 }
             }
         }
     }
+}
 
-    // .icons-contact {
-    //     display: flex;
-    //     flex-direction: row;
-    //     margin: 50px;
-    //     gap: 20px;
-    //     display: flex;
-                
-    //     svg {
-    //         width: 30px;
-    //         height: auto;
-    //         fill: darken(white, 70%);
-    //         margin: 0px 30px 0 0;
-    //         transition: 0.2s ease-in-out;
+@media screen and (max-width: 480px) {
+   .main-wrapper {
+        .icons-contact {
+            gap: 40px;
 
-    //         &:hover {
-    //             transition: 0.2s ease-in-out;
-    //             fill: white;
-    //             transform: translate(0, -10px);
-    //             cursor: pointer;
-    //         }
-    //     }
-    // } 
+            svg {
+                width: 40px;
+            }
+        }
+   }
 }

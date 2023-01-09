@@ -1,13 +1,5 @@
 @import 'variables.scss';
 
-#canvas {
-    position: fixed;
-    bottom: 0;
-    margin: 10px 0 0 0;
-    width: 100vw;
-    height: 120px;
-}
-
 main {
     height: 80vh;
     display: flex;
@@ -16,7 +8,6 @@ main {
 
     .main-wrapper {
         width: auto;
-        // border: 1px solid hotpink;
         margin-left: 130px;
         p {
             font-size: 1.3rem;
@@ -26,12 +17,10 @@ main {
             &.name {
                 font-size: 5rem;
                 font-weight: 300;
-                // text-transform: uppercase;
             }
     
             &.right {
                 text-align: end;
-                // font-size: 0.9rem;
             }
         }
     }
@@ -42,5 +31,26 @@ main {
         left: -90px;
         top: 5px;
 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    main {
+        .main-wrapper {
+            margin-left: 70px;
+            p {
+                font-size: 1.1rem;
+        
+                &.name {
+                    font-size: 3rem;
+                }
+            }
+        }
+        img {
+            height: 200px;
+            left: -60px;
+    
+        }
     }
 }

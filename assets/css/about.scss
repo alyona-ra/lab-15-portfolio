@@ -1,9 +1,5 @@
 @import 'variables.scss';
 
-// body main {
-//     padding: 0;
-// }
-
 h1 {
     color: $light-blue;
 
@@ -17,6 +13,14 @@ p {
     font-weight: 100;
     font-size: 1.15rem;
     line-height: 1.7rem;
+
+    a {
+        color: $mid-blue;
+        text-decoration: none;
+        padding-bottom: 3px;
+        border-bottom: 1px solid $mid-blue;
+        font-weight: 100;
+    }
 }
 
 .wrapper {
@@ -27,33 +31,11 @@ p {
     column-gap: 150px;
     
     .skill-wrapper {
-        h3{
+        h3 {
             font-weight: 100;
             color: white;
             font-size: 1.2rem;
-            margin-bottom: 2px;
-        }
-
-        //https://css-tricks.com/html5-progress-element/
-        progress[value] {
-            -webkit-appearance: none;
-             appearance: none;
-          
-            width: 300px;
-            height: 2px;
-            margin: 2px 0 20px 0;
-        }
-
-        progress[value]::-webkit-progress-bar {
-            background-color: $dark-blue;
-            border-radius: 2px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-        }
-
-        progress[value]::-webkit-progress-value {
-            background-color: $light-blue;
-            border-radius: 2px; 
-            background-size: 35px 20px, 100% 100%, 100% 100%;
+            margin-bottom: 7px;
         }
     }
 }
@@ -64,4 +46,25 @@ img {
     position: fixed;
     right: 15px;
     bottom: 0;
+}
+
+
+@media screen and (max-width: 480px) {
+    p {
+        margin: 10px 20px 10px 50px;
+    }
+    
+    .wrapper {
+        display: block;
+        
+        .skill-wrapper {
+            h3 {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+    img {
+        height: 300px;
+    }
 }

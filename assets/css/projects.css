@@ -27,15 +27,13 @@ main aside .active {
 }
 
 main .project-wrapper {
-  width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 10px 0 70px 50px;
-  border: none;
+  margin: 10px 120px 70px 50px;
 }
 
 main .project-wrapper .text-wrapper h4 {
@@ -75,14 +73,23 @@ main .project-wrapper .text-wrapper button:hover {
   cursor: pointer;
 }
 
-main .project-wrapper .text-wrapper .code-link {
+main .project-wrapper .text-wrapper .project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+main .project-wrapper .text-wrapper .project-links .code-link {
   color: #ADE2F7;
   text-decoration: none;
   font-weight: 300;
   margin-left: 20px;
 }
 
-main .project-wrapper .text-wrapper .code-link:hover {
+main .project-wrapper .text-wrapper .project-links .code-link:hover {
   color: #61CAF5;
 }
 
@@ -97,4 +104,44 @@ main .hidden {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   display: none;
+}
+
+@media screen and (max-width: 480px) {
+  main aside {
+    margin-bottom: 50px;
+  }
+  main .project-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+    margin-right: 70px;
+    margin-bottom: 100px;
+  }
+  main .project-wrapper .text-wrapper .project-description {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  main .project-wrapper .text-wrapper button {
+    width: 100%;
+  }
+  main .project-wrapper .text-wrapper .project-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  main .project-wrapper .text-wrapper .project-links .code-link {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  main .project-wrapper img {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+  }
 }

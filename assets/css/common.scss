@@ -11,7 +11,7 @@ body {
     background-color: $dark-grey;
     color: white;
     height: 100vh;
-    transition: 0.2s ease-in-out;
+    width: 100vw;
     overflow-x: hidden;
 
     main {
@@ -31,14 +31,15 @@ button {
     width: 150px;
     height: 35px;
     border: none;
-    border-radius: 2px;
+    background-color: transparent;
+    color: $light-blue;
     font-size: 1.1rem;
     font-weight: 300;
     text-transform: uppercase;
-    transition: 0.2s ease-in-out;
-    color: $light-blue;
-    background-color: transparent;
     border: 1px solid $light-blue;
+    border-radius: 2px;
+    transition: 0.2s ease-in-out;
+    transition-property: color, background-color;
     
     &:hover {
         transition: 0.2s ease-in-out;

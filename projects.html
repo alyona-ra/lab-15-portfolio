@@ -36,6 +36,109 @@
           <p class="sort-drawing">drawing</p>
         </aside>
         <main>
+          <div class="project-wrapper drawing">
+            <div class="text-wrapper">
+              <h4>Cat Game</h4>
+              <p class="project-media">HTML, Procreate</p>
+              <p class="project-year">2022</p>
+              <p class="project-description">
+                The game is about a cat going on a multiversal journey. He has to go through 3 levels: 
+                black hole, memory planet, and music planet to find out who broke the time-space 
+                continuum. Currently, the game is in an early testing stage.
+              </p>
+              <p class="project-description">
+                This is a game that was developed as a group project. My main role was creating the graphical 
+                assets for between-level scenes, the cat, and some assets for mini-games. Additionally, I
+                also created the HTML template for the game with the CSS fading animations.
+                I used Procreate to create the assets.
+              </p>
+            </div>
+            <img src="/assets/images/catGame.JPG" alt="project image" />
+          </div>
+          <div class="project-wrapper drawing">
+            <div class="text-wrapper">
+              <h4>Spring Show Poster Design</h4>
+              <p class="project-media">Procreate</p>
+              <p class="project-year">2022</p>
+              <p class="project-description">
+                I had an opportunity to design a poster for the Spring Talent Show at my school. It
+                was designed in Procreate. The goal that was set for me was to create a poster that
+                would be calming and give lo-fi and "work from home" vibes. I decided to use a lot of
+                purple and blue colors and a simple display font. 
+              </p>
+            </div>
+            <img src="/assets/images/SS22.png" alt="project image" />
+          </div>
+          <div class="project-wrapper coding">
+            <div class="text-wrapper">
+              <h4>Mini Piano Simulator</h4>
+              <p class="project-media">Java, C++</p>
+              <p class="project-year">2022</p>
+              <p class="project-description">
+                The project is aimed to teach users basic piano keys and where they are located. There 
+                are two main components: a little piano keyboard and software. Once the program is launched, 
+                a user sees a virtual keyboard on the screen that will help to locate the right key on a 
+                physical keyboard. The software consists of Processing sketch and Arduino code. Processing 
+                generates a random key to play and displays it on the screen. Once any key is pressed, 
+                Arduino sends a value for that key to Processing that, in turn, compares the received 
+                value of the key with the expected one. If they match, Processing tells Arduino to light up 
+                the LEDs that are under the keys. The sketch also corresponds to the pressed key by coloring 
+                that key on the screen red if the keys don't match and green if they do. When the correct key 
+                is pressed, a new value for the key to play is randomized, and the process repeats.
+              </p>
+              <p class="project-description">
+                There are different levels of complexity. The first level lets a user see the keys' names 
+                on the virtual keyboard allowing them to find the right key on the physical keyboard easier. 
+                Once a user scores 10 correct keys in a row, the second level triggers. There are no more 
+                keys' names on the screen as the user has to find the right key on its own.
+                Every correct key adds 2 points to the total, and every wrong key subtracts 1 point 
+                from the total. Once a user hits the wrong key, the total number of correct keys in a row 
+                is set back to 0.
+              </p>
+              </div>
+            <img src="/assets/images/piano.jpeg" alt="project image" />
+          </div>
+          <div class="project-wrapper coding">
+            <div class="text-wrapper">
+              <h4>Forrest Gump</h4>
+              <p class="project-media">Java, Procreate</p>
+              <p class="project-year">2022</p>
+              <p class="project-description">
+                The Forrest Gump game is based on the Forrest Gump story. It has 3 simple levels in it. 
+                On the first level, Forrest has to run – and run fast – to escape from something... or 
+                someone... nobody knows exactly. On the second level, Forrest is trying to fulfill his 
+                promise and goes into shrimping business. Lastly, on the third level, there is a yard 
+                that looks terrible, but luckily for the owners, Forrest is eager to help.
+              </p>
+              <p class="project-description">
+                Even though the game is not complicated, each level has its own obstacle. No worries, you 
+                can always restart the level if something goes wrong.
+              </p>
+            </div>
+            <img src="/assets/images/forrestGump.png" alt="project image" />
+          </div>
+          <div class="project-wrapper coding">
+            <div class="text-wrapper">
+              <h4>Christmas Music Box</h4>
+              <p class="project-media">C++</p>
+              <p class="project-year">2021</p>
+              <p class="project-description">
+                A Christmas Music Box can play different Christmas songs. It was coded using Arduino. 
+                The box has three buttons, each of which corresponds to a specific song that will be 
+                played through the piezo. On the side, there is a potentiometer that allows adjusting 
+                the volume. There are also three LED lights that will light up accordingly to a song. 
+                The box also has a photocell to ensure no song will be played if a button is pressed 
+                accidentally when the box is closed. 
+              </p>
+              <p class="project-description">
+                The first, the top button, plays a piece from the "We Wish You a Merry Christmas" 
+                song. By pressing the second, the middle one, "Last Christmas" will play. The "Oh, 
+                Christmas Tree" piece will sound if the third, bottom button is pressed. 
+              </p>
+            </div>
+            <img src="/assets/images/musicBox.JPG" alt="project image" />
+          </div>
+
           <div class="project-wrapper designing">
             <div class="text-wrapper">
               <h4>CEO</h4>
@@ -44,8 +147,10 @@
               <p class="project-description">
                 If you are a student, welcome your new favorite app. CEO helps you to organize your
                 school schedule and notes and keeps track of your assignments. No more turned late
-                works, no more low grades! Unfortunately, only the prototype view is available at
-                the moment.
+                works, no more low grades!
+              </p>
+              <p class="project-description">
+                The prototype view is available on Figma.
               </p>
               <a
                 href="https://www.figma.com/proto/8jmrg5NtT0ih6n6YXu94M1/CEO-prototype?node-id=16%3A2&scaling=scale-down"
@@ -65,15 +170,14 @@
                 A short fun web-based game created in p5.js. Are you ready to help Octos the octopus
                 move to the city? Make sure you have a keyboard and some agility ready.
               </p>
-              <a href="https://editor.p5js.org/alyona-ra/full/gUDIAna8U" target="blank">
-                <button>Explore</button>
-              </a>
-              <a
-                href="https://editor.p5js.org/alyona-ra/sketches/gUDIAna8U"
-                class="code-link"
-                target="blank"
-                >Code
-              </a>
+              <div class="project-links">
+                <a href="https://editor.p5js.org/alyona-ra/full/gUDIAna8U" target="blank">
+                  <button>Explore</button>
+                </a>
+                <a
+                  href="https://editor.p5js.org/alyona-ra/sketches/gUDIAna8U"
+                  class="code-link" target="blank">Code</a>
+              </div>
             </div>
             <img src="/assets/images/octos.jpeg" alt="project image" />
           </div>
@@ -86,41 +190,41 @@
                 A simple web-based racing game created in p5.js. Challenge yourself by raising up a
                 car limit, fun is assured! All you need is your keyboard to play a quick race.
               </p>
-              <a href="https://editor.p5js.org/alyona-ra/full/f-i3xpJIB" target="blank">
-                <button>Explore</button>
-              </a>
-              <a
-                href="https://editor.p5js.org/alyona-ra/sketches/f-i3xpJIB"
-                class="code-link"
-                target="blank"
-                >Code
-              </a>
+              <div class="project-links">
+                <a href="https://editor.p5js.org/alyona-ra/full/f-i3xpJIB" target="blank">
+                  <button>Explore</button>
+                </a>
+                <a
+                  href="https://editor.p5js.org/alyona-ra/sketches/f-i3xpJIB"
+                  class="code-link" target="blank">Code</a>
+              </div>
             </div>
             <img src="/assets/images/racing.jpeg" alt="project image" />
           </div>
-          <div class="project-wrapper designing">
+          <div class="project-wrapper coding">
             <div class="text-wrapper">
-              <h4>Craigslist Redesign</h4>
+              <h4>Pawo</h4>
               <p class="project-media">HTML</p>
-              <p class="project-year">2020</p>
+              <p class="project-year">2021</p>
               <p class="project-description">
-                It is not a secret that Craigslist is lacking in the design. Here's my version of
-                how it should look. It is clean, approachable, and easy to navigate. The latest
-                design trends now call for a flat design utilizing simple patterns that are two
-                dimensional with a clean, modern look. From now on, you will be proud of using
-                Craigslist.
+                Pawo was created to help spread the love for furry. Why cats? They beautifully 
+                complement any human being. They don't require luxury furniture to relax, and they 
+                are easy to please. They have no equal in the art of chill. They are never afraid 
+                to show their temper as they will always tell you what they want whether it's the 
+                right time or not. In addition, they are the perfect apartment accessory for everybody.
               </p>
-              <a href="https://alyona-ra.github.io/mmp240/Midterm/index.html" target="blank">
-                <button>Explore</button>
-              </a>
-              <a
-                href="https://github.com/alyona-ra/mmp240/tree/master/Midterm"
-                class="code-link"
-                target="blank"
-                >Code</a
-              >
+              <p class="project-description">
+                On the website, you can learn more about different breeds and enjoy random cat pictures.
+              </p>
+              <div class="project-links">
+                <a href="https://pawo.netlify.app/" target="blank">
+                  <button>Explore</button>
+                </a>
+                <a
+                  href="https://github.com/alyona-ra/Pawo" class="code-link" target="blank">Code</a>
+              </div>
             </div>
-            <img src="/assets/images/craigslist.png" alt="project image" />
+            <img src="/assets/images/pawo.png" alt="project image" />
           </div>
           <div class="project-wrapper drawing">
             <div class="text-wrapper">
@@ -143,38 +247,39 @@
                 A short fun web-based game created in p5.js. Are you ready to help Octos the octopus
                 move to the city? All you need is a keyboard and some agility.
               </p>
-              <a href="https://editor.p5js.org/alyona-ra/full/HaqOXOHMM" target="blank">
-                <button>Explore</button>
-              </a>
-              <a
-                href="https://editor.p5js.org/alyona-ra/sketches/HaqOXOHMM"
-                class="code-link"
-                target="blank"
-                >Code</a
-              >
+              <div class="project-links">
+                <a href="https://editor.p5js.org/alyona-ra/full/HaqOXOHMM" target="blank">
+                  <button>Explore</button>
+                </a>
+                <a
+                  href="https://editor.p5js.org/alyona-ra/sketches/HaqOXOHMM"
+                  class="code-link" target="blank">Code</a>
+              </div>
             </div>
             <img src="/assets/images/drawingApp.png" alt="project image" />
           </div>
-          <div class="project-wrapper coding">
+          <div class="project-wrapper designing">
             <div class="text-wrapper">
-              <h4>Pawo</h4>
+              <h4>Craigslist Redesign</h4>
               <p class="project-media">HTML</p>
-              <p class="project-year">2021</p>
+              <p class="project-year">2020</p>
               <p class="project-description">
-                Pawo was created to help spread the love for furry. Why cats? They beautifully complement any human being. They don't require luxury furniture to relax, and they are easy to please. They have no equal in the art of chill. They are never afraid to show their temper as they will always tell you what they want whether it's the right time or not. In addition, they are the perfect apartment accessory for everybody.
+                It is not a secret that Craigslist is lacking in the design. Here's my version of
+                how it should look. It is clean, approachable, and easy to navigate. The latest
+                design trends now call for a flat design utilizing simple patterns that are two
+                dimensional with a clean, modern look. From now on, you will be proud of using
+                Craigslist.
               </p>
-              <p class="project-description">On the website, you can learn more about different breeds and enjoy random cat pictures.</p>
-              <a href="https://pawo.netlify.app/" target="blank">
-                <button>Explore</button>
-              </a>
-              <a
-                href="https://github.com/alyona-ra/Pawo"
-                class="code-link"
-                target="blank"
-                >Code</a
-              >
+              <div class="project-links">
+                <a href="https://alyona-ra.github.io/mmp240/Midterm/index.html" target="blank">
+                  <button>Explore</button>
+                </a>
+                <a
+                  href="https://github.com/alyona-ra/mmp240/tree/master/Midterm"
+                  class="code-link" target="blank">Code</a>
+              </div>
             </div>
-            <img src="/assets/images/pawo.png" alt="project image" />
+            <img src="/assets/images/craigslist.png" alt="project image" />
           </div>
         </main>
       </div>
